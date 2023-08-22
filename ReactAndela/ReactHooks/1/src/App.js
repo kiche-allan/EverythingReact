@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const InputElement = () => {
+  const [inputText, setInputText] = useState("");
+  const [historyList, setHistoryList] = useState([]);
 
-export default App;
+  return <>
+  <input onChange={(e) => {
+    setInputText(e.target.value);
+    setHistoryList([...historyList, e.target.value]);
+  }}
+  placeholder="Enter Some Text"/><br/>
+  {inputText}
+  <hr/><br/>
+  <ul>
+    {historyList.map((rec) => {
+      return <div>{rec}</div>
+    })}
+  </ul>
+
+  </>;
+};
+
+export default InputElement;
