@@ -1,11 +1,11 @@
 import React from 'react'
 
 export default function 
-img() {
+ImageChageOnMouseOver() {
   return (
     <div>
-        <img src = "" alt = "" />&nbsp;&nbsp;&nbsp;
-       <img src = "" alt = "" />
+        <img src = "static/speakers/allan1.JPG" alt = "" />&nbsp;&nbsp;&nbsp;
+       <img src = "" alt = "allan2.jpg " />
     </div>
   )
 }
