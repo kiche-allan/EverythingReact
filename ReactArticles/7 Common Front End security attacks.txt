@@ -1,0 +1,29 @@
+7 Common Front End security attacks
+
+As web applications become increasingly critical for business operations, they’re also more attractive targets for cyber attacks. Unfortunately though, many web developers have fallen behind in building secure front ends compared to their backend and DevOps counterparts. This gap raises the risk of damaging data breaches.
+
+Recent incidents like the Balancer Protocol breach expose how much damage attackers can inflict when they exploit front-end vulnerabilities. Balancer Protocol was reportedly hacked through a front-end attack, resulting in the loss of over $240,000, based on what’s been publicly acknowledged. The threat to web apps continues to grow as barriers to staging attacks drop, due to the proliferation of hacking tools and scripts.
+
+The seven common front-end attacks:
+1. Cross-site scripting (XSS):
+It is a type of attack that injects malicious client-side code. For example, an attacker could input JavaScript that steals user cookies into a comment form that doesn't sanitize entries. When victims load the compromised page, the script executes to give the attacker access to user accounts.
+
+2. Dependency risks:
+Front-end apps rely on many third-party libraries and components. If these have vulnerabilities, they undermine the whole app. Using outdated dependencies with known issues is a common developer oversight.
+
+3. Cross-site request forgery (CSRF):
+These force victims to execute unwanted actions in an app they're logged into. For example, an attacker could trick users with a disguised link that quietly transfers funds from their account using their stored credentials.
+
+4. Clickjacking:
+Uses transparent overlays on a trusted page to trick users into clicking on something different than they perceive. For example, an attacker could overlay a transfer funds button or a cat video's play button.
+
+5. CDN tampering:
+If libraries are loaded from external CDNs, attackers could modify them there to inject malicious code that then gets downloaded by app users.
+
+6. HTTPS downgrades:
+Stripping away HTTPS encryption facilitates spying on user traffic. Attackers exploit bugs or lack of HSTS headers to downgrade HTTP requests to plain unprotected HTTP.
+
+7. Man-in-the-middle attacks:
+The attacker secretly relays and possibly alters the way two parties believe they are communicating. This enables spying and spreading of false information between victims.
+
+As more business functionalities move online, the web will continue to grow as an attack vector. JavaScript developers building front-end apps therefore need to step up their security practices. Plus, having an understanding of vulnerabilities from an offender’s perspective, is crucial for shutting down vulnerabilities before they become headlines.
